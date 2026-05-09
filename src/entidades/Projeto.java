@@ -9,20 +9,20 @@ public class Projeto {
     private String nome;
     private String descricao;
     private LocalDate dataInicio;
-    private LocalDate datConclusao;
+    private LocalDate dataConclusao;
     private StatusProjeto status;
     private Usuario responsavel;
 
     public Projeto() {
     }
 
-    public Projeto(Long id, String nome, String descricao, LocalDate dataInicio, LocalDate datConclusao,
+    public Projeto(Long id, String nome, String descricao, LocalDate dataInicio, LocalDate dataConclusao,
             StatusProjeto status, Usuario responsavel) {
         this.id = id;
         this.nome = nome;
         this.descricao = descricao;
         this.dataInicio = dataInicio;
-        this.datConclusao = datConclusao;
+        this.dataConclusao = dataConclusao;
         this.status = status;
         this.responsavel = responsavel;
     }
@@ -60,11 +60,11 @@ public class Projeto {
     }
 
     public LocalDate getDatConclusao() {
-        return datConclusao;
+        return dataConclusao;
     }
 
     public void setDatConclusao(LocalDate datConclusao) {
-        this.datConclusao = datConclusao;
+        this.dataConclusao = datConclusao;
     }
 
     public StatusProjeto getStatus() {
