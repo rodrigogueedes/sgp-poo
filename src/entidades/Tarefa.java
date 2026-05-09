@@ -13,10 +13,14 @@ public class Tarefa {
     private LocalDate dataConclusao;
     private Prioridade prioridade;
     private StatusTarefa status;
+    private Usuario usuario;
+    private Projeto projeto;
+
     public Tarefa() {
     }
+    
     public Tarefa(Long id, String titulo, String descricao, LocalDate dataCriacao, LocalDate dataConclusao,
-            Prioridade prioridade, StatusTarefa status) {
+            Prioridade prioridade, StatusTarefa status, Usuario usuario, Projeto projeto) {
         this.id = id;
         this.titulo = titulo;
         this.descricao = descricao;
@@ -24,7 +28,26 @@ public class Tarefa {
         this.dataConclusao = dataConclusao;
         this.prioridade = prioridade;
         this.status = status;
+        this.usuario = usuario;
+        this.projeto = projeto;
     }
+    
+    public Usuario getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(Usuario usuario) {
+        this.usuario = usuario;
+    }
+
+    public Projeto getProjeto() {
+        return projeto;
+    }
+
+    public void setProjeto(Projeto projeto) {
+        this.projeto = projeto;
+    }
+
     public Long getId() {
         return id;
     }
