@@ -36,9 +36,9 @@ src/
 │   ├── Tarefa.java            # Modelo de domínio para Tarefas
 │   └── Usuario.java           # Modelo de domínio para Usuários
 └── enums/
-    ├── PrioridadeTarefa.java  # Enum para nível de prioridade das tarefas
+    ├── Prioridade.java        # Enum para nível de prioridade das tarefas
     ├── StatusProjeto.java     # Enum para ciclo de vida dos projetos
-    ├── Tarefa.java            # Enum para ciclo de vida das tarefas
+    ├── StatusTarefa.java      # Enum para ciclo de vida das tarefas
     └── StatusUsuario.java     # Enum para situação cadastral dos usuários
 
 ```
